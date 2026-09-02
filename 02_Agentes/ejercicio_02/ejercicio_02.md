@@ -36,6 +36,7 @@ El ambiente podría considerarse continuo. En teoría, existe un número infinit
 - **Sensors:** Los micrófonos utilizados por el asistente, la red WIFI a la que esté conectada.
 
 ***
+***
 ### Robot aspirador doméstico
 - **Performance:** tiempo que tarda en limpiar el espacio deseado, fuerza de aspirado, alcance del espacio de aspirado, autonomía de la batería.
 
@@ -50,6 +51,7 @@ El ambiente es continuo porque hay variables continuas como la velocidad del rob
 
 - **Sensors:** Cámara o sensor infrarrojo, sensor de distancia (para evitar caidas), la red WIFI a la que esté conectada.
 
+***
 ***
 ### Sistema de recomendación de streaming
 - **Performance:** tiempo que el usuario final termina consumiendo una opción recomendada por el agente; calificación explícita del usuario sobre la opción recomendada (como en Netflix que puedes poner si una película te gustó o en Spotify que le puedes dar like).
@@ -68,6 +70,7 @@ Interfaz de la plataforma.
 Historial de contenido consumido por el usuario, calificación dada al contenido consumido, metadata de navegación (dispositivo, hora, perfil, edad, etc.).
 
 ***
+***
 ### Vehículo autónomo en la ciudad
 
 - **Performance:** tiempo que tarda en llegar, confort, optimización de rutas en relación con el costo (de gasolina o uso de batería).
@@ -83,6 +86,7 @@ El ambiente es continuo. Hay demasiadas métricas del agente que son continuas, 
 
 - **Sensors:** velocímetro, tacómetro, cámaras, GPS, etc.
 
+***
 ***
 ### Agente de trading algorítmico en bolsa
 
@@ -100,11 +104,29 @@ El ambiente es continuo, ya que se pueden comprar “partes" de acciones de empr
 - **Sensors:** APIs de consultas en tiempo real para conocer los precios de las acciones; API de redes sociales con consulta a cuentas de noticias económicas.
 
 ***
+***
+### Sistema de diagnóstico médico asistido por IA
+
+- **Performance:** Accuracy, precision, recall y especificidad.
+
+- **Environment:** El ambiente es la aplicación en la que el sistema está alojado junto con el hospital y el personal médico que lo usa.
+El ambiente es parcialmente observable, ya que por más completo que esté el estudio que el agente analiza, siempre le va a hacer falta contexto biológico o social para tener más certeza del diagnóstico.
+El ambiente es estocástico, ya que hay mucho ruido involucrado dentro de los estudios; por ejemplo, que la persona no haya hecho ayuno o que la persona que realizó los análisis los haya tomado incorrectamente impacta directamente en el resultado del mismo.
+El ambiente es secuencial, ya que dependiendo del resultado, el personal médico podría dar o no continuidad al caso médico.
+Con respecto al dinamismo, estoy un poco indeciso si decir que es dinámico, porque el cuerpo humano cambia segundo a segundo, o si decir semi dinámico, porque importa muchísimo el tiempo (si me hago una prueba de COVID y después de 3 semanas el agente dice que es positiva, seguramente ya no será el caso). Lo que sí es seguro es que no es estático.
+El ambiente es continuo, ya que los resultados de muestras médicas rara vez tienen sentido si son discretos. La glucosa, el oxígeno en la sangre, la presión sanguínea, etc., tienden a ser continuas.
+
+- **Actuators:** interfaz gráfica donde se muestre el resultado del paciente.
+
+- **Sensors:** interfaz gráfica donde se ingresen los datos del paciente, o bien una API/correo a donde se envíen los datos que va a analizar el agente.
+
+***
+***
 ### Dron de inspección de infraestructura
 
 - **Performance:** tiempo que tarda el dron en inspeccionar toda la infraestructura, precisión de la inspección, autonomía de la batería, alcance del control remoto, calidad de la cámara.
 
-- **Environment:** el ambiente es totalmente dependiente de la infraestructura que se vaya a inspeccionar. Puede ser un edificio, una escuela, una casa, etc.
+- **Environment:** el ambiente es totalmente dependiente de la infraestructura que se vaya a inspeccionar. Puede ser un en puente, tuberías o líneas eléctricas.
 El ambiente es parcialmente observable ya que el dron solamente tiene visión del ambiente hasta el rango que sus sensores le permiten.
 El ambiente puede ser estocástico, ya que si la infraestructura no es cerrada puede haber mucho ruido o interferencia en la inspección, como que un pájaro se meta o algo similar.
 El ambiente es secuencial, muy similar al caso del coche: un giro a la izquierda o a la derecha afecta directamente decisiones futuras del agente.
@@ -115,6 +137,7 @@ El ambiente es continuo. Muy seguramente habrá mediciones de paredes o partes q
 
 - **Sensors:** cámaras del dron, sistemas infrarrojos, giroscopios, GPS.
 
+***
 ***
 ### Agente jugador de ajedrez
 
