@@ -33,13 +33,13 @@ Igualmente, adjunto las comparativas de mis resultados contra los originales:
 
 | Scatter original | Scatter modificada |
 | :---: | :---: |
-| ![Scatter](Imagenes/scatter_original.png) | ![Scatter](Imagenes/scatter_modificado.png) |
+| ![Scatter](imagenes/scatter_original.png) | ![Scatter](imagenes/scatter_modificado.png) |
 | Diagrama de Voronoi original | Diagrama de Voronoi modificado |
-| ![Voronoi](Imagenes/Voronoi_original.png) | ![Voronoi](Imagenes/Voronoi%20modificado.png) |
+| ![Voronoi](imagenes/Voronoi_original.png) | ![Voronoi](imagenes/Voronoi%20modificado.png) |
 | Curva de inercia original| Curva de inercia modificada |
-| ![Inercia](Imagenes/Curva_silueta_original.png) | ![Inercia](Imagenes/Curva_silueta_modificado.png) |
+| ![Inercia](imagenes/Curva_silueta_original.png) | ![Inercia](imagenes/Curva_silueta_modificado.png) |
 | Curva de silueta original| Curva de Silueta modificada |
-| ![Silueta](Imagenes/Curva_silueta_original.png) | ![Silueta](Imagenes/Curva_silueta_modificado.png) |
+| ![Silueta](imagenes/Curva_silueta_original.png) | ![Silueta](imagenes/Curva_silueta_modificado.png) |
 
 ***
 ***
@@ -48,4 +48,4 @@ Para responder la pregunta de *En los datos de Géron, ¿por qué el codo “pre
 
 Al momento de crear mis datos, forcé mucha separación entre los centroides y utilicé una desviación pequeña, precisamente como se ve en la imagen, para poder hacer visual y matemáticamente la distinción entre cada grupo. Por esto mismo, tanto mi codo como la silueta coinciden en mi k=5.
 
-Además de la notebook previamente adjuntada, [se puede consultar una captura](Imagenes/evidencia.png) como evidencia de mi instanciai en Colab para corroborar que corrí y modifiqué el código.
+Además de la notebook previamente adjuntada, [se puede consultar una captura](imagenes/evidencia.png) como evidencia de mi instanciai en Colab para corroborar que corrí y modifiqué el código.
