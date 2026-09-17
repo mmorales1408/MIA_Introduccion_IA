@@ -37,7 +37,7 @@ Igualmente, adjunto las comparativas de mis resultados contra los originales:
 | Diagrama de Voronoi original | Diagrama de Voronoi modificado |
 | ![Voronoi](imagenes/Voronoi_original.png) | ![Voronoi](imagenes/Voronoi%20modificado.png) |
 | Curva de inercia original| Curva de inercia modificada |
-| ![Inercia](imagenes/Curva_silueta_original.png) | ![Inercia](imagenes/Curva_silueta_modificado.png) |
+| ![Inercia](imagenes/Codo_original.png.png) | ![Inercia](imagenes/Codo_modificado.png) |
 | Curva de silueta original| Curva de Silueta modificada |
 | ![Silueta](imagenes/Curva_silueta_original.png) | ![Silueta](imagenes/Curva_silueta_modificado.png) |
 
